@@ -12,10 +12,9 @@ body {
 
 /* reset rules */
 
-
 /* grid */
 #grid {
-    width: 600px;
+    width: 1000px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -24,7 +23,7 @@ body {
 .container {
     margin: 0 auto;
     padding-top: 100px;
-    width: 600px;
+    max-width: 1000px;
 }
 
 .square {
@@ -32,12 +31,41 @@ body {
     justify-content: center;
     align-items: center;
 
-    width: 60px;
-    height: 60px;
+    width: 142px;
+    height: 142px;
+    padding: 1px;
+    outline: 1px solid blue;
+    outline-offset: -5px;
 
-    border: solid 1px blue;
+
 }
 
 .clicked {
     background-color: rgb(76, 76, 206);
+}
+
+.squareMedium {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 111px;
+    height: 111px;
+
+    padding: 1px;
+    outline: 1px solid blue;
+    outline-offset: -5px;
+}
+
+.squareHard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 100px;
+
+    padding: 1px;
+    outline: 1px solid blue;
+    outline-offset: -5px;
 }

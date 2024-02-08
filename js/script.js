@@ -2,7 +2,9 @@ const btnGen = document.querySelector("#btn-gen-game");
 const gridElement = document.querySelector("#grid")
 
 btnGen.addEventListener("click", genGrid);
+
 let newElement;
+
 function genGrid() {
     gridElement.innerHTML = "";
     let num = modifyDifficulty();
@@ -22,7 +24,6 @@ function genGrid() {
     }
 }
 
-
 function modifyDifficulty() {
     let numberSquares = 0;
     let valueSquare = document.querySelector("#select-difficulty").value;
@@ -38,20 +39,17 @@ function modifyDifficulty() {
     return numberSquares;
 }
 
-
 function addClass(changeGrid, num) {
     let newClass = "a"
     if (num == 49) {
     }
-    if (num == 81) {
+    else if (num == 81) {
         newClass = "squareMedium";
         changeGrid.classList.add(newClass);
-        changeGrid.classList.remove("square");
     }
     else if (num == 100) {
 
         newClass = "squareHard";
         changeGrid.classList.add(newClass);
-        changeGrid.classList.remove("square");
     }
 }
